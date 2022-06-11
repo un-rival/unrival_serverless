@@ -15,7 +15,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy_cockroachdb import run_transaction
 from sqlalchemy.orm.exc import NoResultFound, MultipleResultsFound
 
-from models import Account
+from .models import Account
 import os
 from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
