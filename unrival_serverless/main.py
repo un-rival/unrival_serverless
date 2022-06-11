@@ -25,7 +25,12 @@ DATABASE_URL = os.environ.get("DATABASE_URL")
 
 
 def create_accounts(session, num):
-    """Create N new accounts with random account IDs and account balances.
+    """
+    Formats the given value as a human readable string using the given units.
+
+    :param float|int value: a numeric value
+    :param str unit: the unit for the value (kg, m, etc.)
+    :rtype: str
     """
     print("Creating new accounts...")
     new_accounts = []
