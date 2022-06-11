@@ -7,16 +7,15 @@ authors = ["David Joseph <directed.collective@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.9"
 behave = "^1.2.6"
-sphinx-autodoc-typehints = "^1.18.2"
+cockroachdb = "^0.3.5"
 Sphinx = "^5.0.1"
+sphinx-autodoc-typehints = "^1.18.3"
 sphinx-rtd-theme = "^1.0.0"
 sphinxcontrib-napoleon = "^0.7"
 python-dotenv = "^0.20.0"
 psycopg2-binary = "^2.9.3"
-cockroachdb = "^0.3.5"
 SQLAlchemy = "^1.4.37"
 sqlalchemy-cockroachdb = "^1.4.3"
-
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
