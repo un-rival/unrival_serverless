@@ -35,6 +35,44 @@
   <section id="unrival-directed-collective-intelligence">
 <h1>Unrival: Directed Collective Intelligence<a class="headerlink" href="#unrival-directed-collective-intelligence" title="Permalink to this heading">¶</a></h1>
 <p>These docs are auto-generated from code comments in the Unrival sourcecode.</p>
+<span class="target" id="module-unrival_serverless.main"></span><p>This simple CRUD application performs the following operations sequentially:
+1. Creates 100 new accounts with randomly generated IDs and randomly-computed balance amounts.
+2. Chooses two accounts at random and takes half of the money from the first and deposits it</p>
+<blockquote>
+<div><p>into the second.</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Chooses five accounts at random and deletes them.</p></li>
+</ol>
+<dl class="py function">
+<dt class="sig sig-object py" id="unrival_serverless.main.create_accounts">
+<span class="sig-prename descclassname"><span class="pre">unrival_serverless.main.</span></span><span class="sig-name descname"><span class="pre">create_accounts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unrival_serverless.main.create_accounts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Formats the given value as a human readable string using the given units.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>value</strong> (<em>float</em><em>|</em><em>int</em>) – a numeric value</p></li>
+<li><p><strong>unit</strong> (<em>str</em>) – the unit for the value (kg, m, etc.)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unrival_serverless.main.delete_accounts">
+<span class="sig-prename descclassname"><span class="pre">unrival_serverless.main.</span></span><span class="sig-name descname"><span class="pre">delete_accounts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unrival_serverless.main.delete_accounts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete N existing accounts, at random.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="unrival_serverless.main.transfer_funds_randomly">
+<span class="sig-prename descclassname"><span class="pre">unrival_serverless.main.</span></span><span class="sig-name descname"><span class="pre">transfer_funds_randomly</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">one</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">two</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#unrival_serverless.main.transfer_funds_randomly" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transfer money between two accounts.</p>
+</dd></dl>
+
 <div class="toctree-wrapper compound">
 </div>
 </section>
